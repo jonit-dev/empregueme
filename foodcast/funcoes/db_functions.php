@@ -1,0 +1,175 @@
+<?php
+
+function mysqli_secure_query($var_to_validate) {
+//this functions secure the vars that will be send to database
+    // Lista de palavras para procurar
+    $check[1] = chr(34); // s�mbolo "
+    $check[2] = chr(39); // s�mbolo '
+    $check[3] = chr(92); // s�mbolo /
+    $check[4] = chr(96); // s�mbolo `
+    $check[5] = "drop table ";
+    $check[6] = "foda-se ";
+    $check[7] = "alter table ";
+    $check[8] = "drop database ";
+    $check[9] = "drop ";
+    $check[10] = "select ";
+    $check[11] = "delete ";
+    $check[12] = "insert ";
+    $check[13] = "alter ";
+    $check[14] = "destroy ";
+    $check[15] = "foda-se ";
+    $check[16] = "database ";
+    $check[17] = "union ";
+    $check[18] = "TABLE_NAME ";
+    $check[19] = "foda-se ";
+    $check[20] = 'foda-se ';
+    $check[21] = 'foda-se ';
+    $check[22] = 'INFORMATION_SCHEMA ';
+    $check[23] = 'foda-se ';
+    $check[24] = 'COLUMNS ';
+    $check[25] = 'into ';
+    $check[26] = 'VALUES ';
+
+    /* lista original
+
+      $check[1] = chr(34); // s�mbolo "
+      $check[2] = chr(39); // s�mbolo '
+      $check[3] = chr(92); // s�mbolo /
+      $check[4] = chr(96); // s�mbolo `
+      $check[5] = "drop table";
+      $check[6] = "update";
+      $check[7] = "alter table";
+      $check[8] = "drop database";
+      $check[9] = "drop";
+      $check[10] = "select";
+      $check[11] = "delete";
+      $check[12] = "insert";
+      $check[13] = "alter";
+      $check[14] = "destroy";
+      $check[15] = "table";
+      $check[16] = "database";
+      $check[17] = "union";
+      $check[18] = "TABLE_NAME";
+      $check[19] = "1=1";
+      $check[20] = 'or 1';  <<-- tava bugando descri��o do produto
+      $check[21] = 'exec';
+      $check[22] = 'INFORMATION_SCHEMA';
+      $check[23] = 'like';
+      $check[24] = 'COLUMNS';
+      $check[25] = 'into';
+      $check[26] = 'VALUES';
+     */
+
+    // Cria se as vari�veis $y e $x para controle no WHILE que far� a busca e substitui��o
+    $y = 1;
+    $x = sizeof($check);
+    // Faz-se o WHILE, procurando alguma das palavras especificadas acima, caso encontre alguma delas, este script substituir� por um espa�o em branco " ".
+    while ($y <= $x) {
+        $target = strpos($var_to_validate, $check[$y]);
+        if ($target !== false) {
+            $var_to_validate = str_replace($check[$y], "", $var_to_validate);
+        }
+        $y++;
+    }
+
+
+//faz altera��es para evitar erro em BD
+    $new_var = strip_tags(addslashes(trim($var_to_validate)));
+    return $new_var;
+}
+
+function stripslashes_array(&$arr) {
+    foreach ($arr as $k => &$v) {
+        $nk = stripslashes($k);
+        if ($nk != $k) {
+            $arr[$nk] = &$v;
+            unset($arr[$k]);
+        }
+        if (is_array($v)) {
+            stripslashes_array($v);
+        } else {
+            $arr[$nk] = stripslashes($v);
+        }
+    }
+}
+
+function clean_stmt() {
+
+    //Fecha alguma consulta que eu possa ter esquecido aberta
+    if (isset($stmt)) {
+        $stmt->close(); //fecha stmt
+        unset($stmt); //deleta vari�vel
+    }
+}
+
+
+function mysqli_full_connection() {
+//THIS FUNCTION CONNECTS TO A DATABASE AND MANAGE SOME COMMONS ERRORS
+    require_once('classes/connect_class.php');
+
+    $connect = new ConnectionFactory;
+    $mysqli = $connect->getConnection();
+    return $mysqli;
+}
+
+function prepare_for_db($array_with_vars) {
+    for ($i = 0; $i < count($array_with_vars); $i++) {
+        if (preg_match('/[0-9]+/', $array_with_vars[$i])) { //se na string tem algum padr�o num�rico
+
+            $alphabet = range('a', 'z');
+            for ($s = 0; $s < count($alphabet); $s++) {
+                if (stristr($array_with_vars[$i], $alphabet[$s])) {//se na nossa vari�vel numerica tem algum tipo de letra
+                    //echo 'Esse n�mero tem letras no meio. Nao vou fazer nada';
+                } else {//agora, se � s� n�mero..acerte o valor!
+                    doubleval($array_with_vars[$i]);
+                }
+            }
+        }
+
+        //filtragem de strings...
+        $array_with_vars[$i] = addslashes($array_with_vars[$i]); //adiciona / antes de enviar � DB (para seguran�a)	
+        $array_with_vars[$i] = strip_tags($array_with_vars[$i]); //remove tags PHP ou HTML => podem ser maliciosas
+        $array_with_vars[$i] = trim($array_with_vars[$i]); //remove espa�os em branco
+    }
+}
+
+function avoid_sql_injection($array_inputs) {//$array_with_vars = caracteres proibidos!, $string = string na qual eles n�o podem estar presentes!
+    $array_with_vars = array("=", "'", "/", '"', ">", "<"); //aqui ficam as arrays proibidas!
+
+    for ($i = 0; $i < count($array_inputs); $i++) {//loop atrav�s das arrays
+        //agora checa em cada uma dessas arrays se tem palavras proibidas usadas em SQL injection
+        for ($a = 0; $a < count($array_with_vars); $a++) {
+            if (stristr($array_inputs[$i], $array_with_vars[$a])) {//se existe alguma palavra proibida em alguma das arrays analisadas
+                echo "A forbidden word was found in your search input field. Try again with a different value.";
+                exit;
+            }
+        }
+    }
+
+
+    /*
+      for($i=0;$i < count($array_with_vars);$i++)
+      {
+      if (stristr($array_inputs[$i],$array_with_vars[$i]))
+      {
+      echo "You inserted a forbidden character on the form.";
+      exit;
+      }
+      } */
+}
+
+function get_user_id($login) {
+    $mysqli = mysqli_full_connection('localhost', 'normal_user', '32258190', 'projeto_rsc', 'Could not connect to database.');
+
+    $qry = "SELECT userid FROM auth WHERE email=?";
+    $stmt = $mysqli->prepare($qry);
+    $stmt->bind_param('s', $login);
+    $stmt->execute();
+    $stmt->bind_result($r_userid);
+
+    while ($stmt->fetch()) {//enquanto houver resultado
+        return $r_userid;
+    }
+}
+
+?>

@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+.visitas_box
+{
+width:786px;
+height:68px;
+border-color:#c2c2c2;
+border-width:1px;
+border-style:solid;
+
+display:inline-block;
+float:left;	
+
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+margin-bottom:10px;
+}
+
+.visita_data
+{
+position:relative;
+top:5px;
+left:70px;
+
+font-family: 'lucida_granderegular';
+font-size:11px;
+}
+
+.visita_nome
+{
+position:relative;
+top:10px;
+left:70px;
+
+font-family: 'lucida_granderegular';
+font-size:11px;
+}
+.visita_email
+{
+position:relative;
+top:15px;
+left:70px;
+
+font-family: 'lucida_granderegular';
+font-size:11px;
+}
+
+.visita_img
+{
+position:relative;
+top:-32px;
+left:5px;	
+}

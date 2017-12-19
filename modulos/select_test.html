@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type='text/javascript' src="js/jquery-1.10.2.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	
+	//ao mudarmos o select na categoria
+$("select[name='categoria']").change(function()
+{
+	//primeiro, remove a primeira categoria quando selecionarmos a categoria
+	$("option[value='none']").remove();
+	
+	switch($("select[name='categoria']").val())
+		{
+			case '1':
+			//aqui roda loop para carregar dados da base de dados
+	$("#subcategoria").html('<option value="teste">Teste</option>');
+			
+			break;	
+		}
+});//end change
+
+	
+	
+	
+	});//end ready
+
+
+</script>
+
+</head>
+
+<body>
+
+
+
+			<form action="main.php" method="post">
+			
+			<ul>
+				Título:<li>
+						<input type="text"/>
+						</li>
+				Categoria:<li>
+						  <select name="categoria">
+						  	<option value="none">Selecione a categoria...</option>
+                            <option value="1">Carros motos e outros</option>															  
+						  </select>
+						</li>
+						
+				Subcategoria:<li>
+						  <select name="subcategoria" id="subcategoria">
+							<option value="none">Selecione uma categoria primeiro...</option>															  
+						  </select>
+						</li>
+			</ul>
+			
+			
+			
+			</form>
+			
+
+
+
+
+</body>
+</html>

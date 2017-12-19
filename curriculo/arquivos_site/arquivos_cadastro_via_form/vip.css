@@ -1,0 +1,290 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+background-color:white;	
+}
+*
+{
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;	
+}
+a, a:link, a:visited
+{
+	text-decoration:underline;
+	color:#333;
+}
+
+.principais_duvidas
+{
+font-size:1.1em;
+font-weight:bold;	
+}
+
+
+label
+{
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:13px;	
+color:#333;
+padding:10px;	
+}
+legend
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+font-size:10px;	
+color:#333;
+padding:10px;
+	
+}
+
+
+
+
+p
+{
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:13px;	
+color:#333;	
+}
+h1
+{
+font-family:Georgia, "Times New Roman", Times, serif;
+font-weight:bold;
+font-size:24px;	
+color:black;
+}
+.special
+{
+color:#bb0300;	
+}
+h2
+{
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:21px;	
+color:#900;
+
+}
+.beneficios
+{
+width:216px;
+height:200px;
+background-color:white;	
+display:inline-block;
+float:left;
+
+}
+.b_title
+{
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:18px;	
+color:#bb0300;
+font-weight:bold;
+margin-left:5%;	
+margin-top:5%;
+}
+.b_subtitle
+{
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:12px;	
+color:#c3c3c3;
+margin-left:6%;	
+margin-top:0%;
+}
+.box_vip
+{
+	width:210px;height:247px;
+	margin-left:2%;
+	background-image:url(GFX/images/box_64.png);
+	background-repeat:no-repeat;
+	background-position:0% 2%;
+	z-index:1;
+	}
+#img_alerta
+{
+	width:218px;
+	height:247px;
+	background-image:url(GFX/images/alerta-vagas_64.jpg);
+		background-repeat:no-repeat;
+	background-position:50px 20px;
+	z-index:3;
+
+}
+#img_exclusiva
+{
+	width:218px;
+	height:247px;
+	background-image:url(GFX/images/vagasexclusivas_64.jpg);
+		background-repeat:no-repeat;
+	background-position:30px 20px;
+	z-index:3;
+
+}
+
+#img_cursos
+{
+	width:218px;
+	height:247px;
+	background-image:url(GFX/images/empregueme_83.jpg);
+		background-repeat:no-repeat;
+	background-position:60px 20px;
+	z-index:3;
+
+}
+
+#img_curr
+{
+	width:218px;
+	height:247px;
+	background-image:url(GFX/images/curriculo-personalizado_82.jpg);
+		background-repeat:no-repeat;
+	background-position:40px 14px;
+	z-index:3;
+
+}
+
+
+
+
+#img_suporte
+{
+	width:218px;
+	height:247px;
+	background-image:url(GFX/images/suporte_70.jpg);
+		background-repeat:no-repeat;
+	background-position:60px 20px;
+	z-index:3;
+
+}
+#img_desconto
+{
+	width:218px;
+	height:247px;
+background-image:url(GFX/images/ultimos_97.jpg);
+	background-repeat:no-repeat;
+	background-position:60px 30px;
+	z-index:3;
+
+}
+#img_limitacao
+{
+	width:218px;
+	height:247px;
+background-image:url(GFX/images/ultimos_94.jpg);
+	background-repeat:no-repeat;
+	background-position:50px 20px;
+	z-index:3;
+
+}
+#main
+{
+width:560px;
+
+}
+.details
+{
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:.8em;
+color:gray;	
+	
+}
+
+.info
+{
+width:200px;
+height:200px;
+padding-top:20px;
+padding-left:20px;
+display:inline-block;
+float:left;	
+}
+.plan_description
+{
+font-size:.7em;	
+}
+.duvidas
+{
+width:auto;
+height:auto;
+float:left;	
+}
+.duvida_txt
+{
+font-weight:bold;
+font-size:1em;	
+	
+}
+
+#caixa_pagseguro
+{
+display:inline-block;
+float:left;
+margin-top:50px;
+}
+
+#caixa_video_pagseguro
+{
+	display:inline-block;
+float:left;	
+}
+
+#planos
+{
+margin-left:0%;	
+}
+.planos_escolhas
+{
+padding-left:20px;	
+opacity:.8;
+}
+.planos
+{
+text-decoration:underline;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:14px;	
+color:#900;
+font-weight:bold;
+
+}
+
+.planos_escolhas:hover
+{
+	opacity:1;
+}
+
+#sac
+{
+margin-top:10px;	
+}
+#comopagar
+{
+margin-left:20%;	
+}
+
+.check
+{
+
+}
+
+.check_txt
+{
+
+font-size:.7em;	
+}
+
+.checklist_div
+{
+background-image:url(plano%20empresa/check.jpg);
+background-repeat:no-repeat;
+height:25px;
+display:inline-block;
+float:left;
+}
+.ck_txt
+{
+margin-top:5px;
+margin-left:30px;	
+font-size:1em;
+}

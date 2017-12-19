@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* CSS Document */
+
+#header_topo
+{
+width:100%;
+height:66px;
+background-color:#99cc00;	
+position:relative;
+}
+#logo
+{
+	position:absolute;
+	top:18px;
+	left:58px;
+	width:112px;
+	height:26px;
+	background-image:url(../gfx/logo.png);
+	background-origin:0px 0px;
+	background-repeat:no-repeat;
+}
+#login_box
+{
+	position:absolute;
+	top:19px;
+	right:6px;
+	width: 387px;	
+}
+#ultimas_vagas
+{
+	position:absolute;
+	top:87px;
+	left:55px;
+	width:500px;
+	height:500px;
+	
+}
+#form_create_account
+{
+	position:absolute;
+	top:67px;
+	left:8px;
+	height: 415px;
+}
+#content_index
+{
+	position:absolute;
+	top:90px;
+	left:751px;
+	width:459px;
+	height:500px
+}
+.subtitle
+{
+	position:relative;
+	top:5px;
+	left:20px;
+	font-family: 'lucida_granderegular';
+	font-size:13px;
+	color:#354700;
+}
+
+.input_index
+{
+width:141px;
+height:26px;
+border-style:solid;
+border-color:#85b300;
+border-width:1px;	
+font-family: 'lucida_granderegular';
+font-size:12px;
+padding:1px 1px 1px 1px;
+}
+
+.input_submit {
+	position:absolute;
+	top:0px;
+	right:10px;
+	
+	
+	-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9dc720), color-stop(1, #81ab04) );
+	background:-moz-linear-gradient( center top, #9dc720 5%, #81ab04 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dc720', endColorstr='#81ab04');
+	background-color:#99c31b;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:1px solid #7ea801;
+	display:inline-block;
+	color:#ffffff;
+ font-family: 'lucida_granderegular';
+	font-size:12px;
+	font-weight:bold;
+	font-style:normal;
+	height:28px;
+	line-height:24px;
+	width:75px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #294a0a;
+}
+.input_submit:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9dc720), color-stop(1, #81ab04) );
+	background:-moz-linear-gradient( center top, #9dc720 5%, #81ab04 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dc720', endColorstr='#81ab04');
+	background-color:#5cb811;
+}
+
+
+.input_submit:active {
+position:absolute;
+	top:1px;
+	right:9px;
+
+	
+}
+.input_submit:focus
+{
+outline:none;	
+}
+
+.title
+{
+	 font-family: 'lucida_grandebold';
+	font-size:30px;
+	color:#354700;
+}
+
+.input_create_account
+{
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+
+border-style:solid;
+border-width:1px;
+border-color:#c7c7c7;
+
+width:320px;
+height:35px;
+
+padding:4px 4px 4px 4px;
+
+ font-family: 'lucida_granderegular';
+	font-size:20px;
+	
+}
+#user_foto
+{
+	position:absolute;
+	top:322px;
+	left:9px;
+}
+#input_upload
+{
+	position:absolute;
+	top:337px;
+	left:69px;
+}
+#foto_detalhe
+{
+	position:absolute;
+	top:369px;
+	left:65px;
+	width:304px;
+	font-family: 'lucida_granderegular';
+	font-size:11px;
+	color:#d4d4d4;
+	
+}
+#btm_nova_conta
+{
+	position:absolute;
+	top:398px;
+	left:43px;
+	width:192px;
+	height:45px;
+	
+}
+.input_btm_nova_conta
+{
+	-moz-box-shadow:inset 0px 1px 0px 0px #ad7623;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ad7623;
+	box-shadow:inset 0px 1px 0px 0px #ad7623;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fa8b29), color-stop(1, #d26201) );
+	background:-moz-linear-gradient( center top, #fa8b29 5%, #d26201 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa8b29', endColorstr='#d26201');
+	background-color:#fa8b29;
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	border-bottom-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	border-bottom-left-radius:5px;
+	text-indent:0;
+	border:1px solid #cccccc;
+	display:inline-block;
+	color:#ffffff;
+		font-family: 'lucida_grandebold';
+	font-size:18px;
+	font-weight:bold;
+	font-style:normal;
+	height:45px;
+	line-height:35px;
+	width:194px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 2px 0px #6e4c19;
+}
+.input_btm_nova_conta:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d26201), color-stop(1, #fa8b29) );
+	background:-moz-linear-gradient( center top, #d26201 5%, #fa8b29 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d26201', endColorstr='#fa8b29');
+	background-color:#d26201;
+}.input_btm_nova_conta:active {
+position:absolute;
+	top:400px;
+	left:44px;
+}
+.input_btm_nova_conta:focus
+{
+outline:none;	
+}
+/* This button was generated using CSSButtonGenerator.com */	

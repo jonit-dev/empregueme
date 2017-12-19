@@ -1,0 +1,16 @@
+[26-Nov-2014 12:16:45] PHP Fatal error:  Uncaught exception 'Exception' with message 'CURL can't connect: connect() timed out!' in /home/empre941/public_html/novo/PagSeguroLibrary/utils/PagSeguroHttpConnection.class.php:120
+Stack trace:
+#0 /home/empre941/public_html/novo/PagSeguroLibrary/utils/PagSeguroHttpConnection.class.php(64): PagSeguroHttpConnection->curlConnection('GET', 'https://ws.pags...', 20, 'UTF-8', NULL)
+#1 /home/empre941/public_html/novo/PagSeguroLibrary/service/PagSeguroNotificationService.class.php(66): PagSeguroHttpConnection->get('https://ws.pags...', 20, 'UTF-8')
+#2 /home/empre941/public_html/novo/PagSeguroLibrary/NotificationListener.php(63): PagSeguroNotificationService::checkTransaction(Object(PagSeguroAccountCredentials), 'C41940-D3A739A7...')
+#3 /home/empre941/public_html/novo/PagSeguroLibrary/NotificationListener.php(40): NotificationListener::transactionNotification('C41940-D3A739A7...')
+#4 /home/empre941/public_html/novo/PagSeguroLibrary/NotificationListener.php(119): NotificationListener::main()
+#5 {main}
+  thrown in /home/empre941/public_html/novo/PagSeguroLibrary/utils/PagSeguroHttpConnection.class.php on line 120
+[06-May-2015 19:50:09] PHP Fatal error:  Uncaught exception 'Exception' with message 'CURL can't connect: Unknown SSL protocol error in connection to ws.pagseguro.uol.com.br:443 ' in /home/empre941/public_html/novo/PagSeguroLibrary/utils/PagSeguroHttpConnection.class.php:120
+Stack trace:
+#0 /home/empre941/public_html/novo/PagSeguroLibrary/utils/PagSeguroHttpConnection.class.php(64): PagSeguroHttpConnection->curlConnection('GET', 'https://ws.pags...', 20, 'UTF-8', NULL)
+#1 /home/empre941/public_html/novo/PagSeguroLibrary/service/PagSeguroNotificationService.class.php(66): PagSeguroHttpConnection->get('https://ws.pags...', 20, 'UTF-8')
+#2 /home/empre941/public_html/novo/PagSeguroLibrary/NotificationListener.php(63): PagSeguroNotificationService::checkTransaction(Object(PagSeguroAccountCredentials), 'BA8529-8DEEBAEE...')
+#3 /home/empre941/public_html/novo/PagSeguroLibrary/NotificationListener.php(40): NotificationListener::transactionNotification('BA8529-8DEEBAEE...')
+#4 /home/empre941/public_html/novo/PagSeguroLibrary/NotificationListener.php(119): No in /home/empre941/public_html/novo/PagSeguroLibrary/utils/PagSeguroHttpConnection.class.php on line 120

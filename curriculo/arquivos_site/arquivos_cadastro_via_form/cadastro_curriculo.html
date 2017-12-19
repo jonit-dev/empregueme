@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Assinatura - Membro VIP</title>
+<style type="text/css">
+@import url('vip.css');
+@import url('cadastro.css');
+</style>
+
+</head>
+
+<body>
+<h2>Cadastre seu currículo</h2>
+<form action="" method="POST">
+<fieldset>
+
+<p>Preencha abaixo seu currículo!<strong><span class="special"> Os campos marcados com * são obrigatórios e os que não possuem tal marcação podem ser deixados em branco.</span></strong> Aconselhamos que você <strong>preencha seu currículo da forma mais completa possível </strong>para que as empresas consigam encontrar suas informações com facilidade!</p>
+
+<p><span class="planos">Informações básicas</span></p>
+
+<label for="nome">Nome completo:</label>
+<input type="text" name="nome" style="width:400px;" maxlength="100" placeholder="Digite aqui."/>
+<br />
+
+<label for="sexo">Sexo:</label>
+<span class="radio">
+<input type="radio" name="sexo" value="masculino" />Masculino
+<input type="radio" name="sexo" value="feminino" />Feminino<br />
+</span>
+
+<label for="idade">Idade:</label>
+<select name="idade">
+<option value="14">14</option>
+</select>
+<br />
+<label for="estado">Estado:</label>
+<select name="Estado">
+<option value="ES">Espírito Santo</option>
+</select>
+<label for="cidade">Cidade:</label>
+<select name="cidade">
+<option value="vitoria">Vitória</option>
+</select>
+<label for="bairro">Bairro:</label>
+<select name="bairro">
+<option value="jardimdapenha">Jardim da Penha</option>
+</select>
+<br />
+<label for="telefone">Telefone para contato:</label>
+<input type="tel"/>
+<br />
+<label for="perfilfacebook">Link do perfil no facebook:</label>
+<input type="text" name="perfilfacebook" style="width:300px;" placeholder="Exemplo: www.facebook.com/joanadasilva"/>
+
+<div id="photo">
+<img src="Moonify_UI_03.png" alt="foto" /><br />
+
+<span class="radio">Enviar foto:<input type="file" />
+</div>
+
+<p><span class="planos">Objetivo Profissional</span></p>
+<p>Descreva qual é seu objetivo profissional:</p>
+<textarea placeholder="Deixe claro o seu objetivo profissional. Cuidado com exageros: antes de enviar seu perfil a um empregador, decida BEM o que você quer fazer e em que área quer atuar. Máximo de 300 caracteres." rows="4" cols="100" style="width:400;height:200;" spellcheck="true" maxlength="300" name="objetivo"></textarea>
+
+
+<p><span class="planos">Formação</span></p>
+<p>Preencha os campos abaixo, digitando  qual curso fez, quando começou e terminou e em qual instituição.<br />
+ <span class="exemplo">(Exemplo: Curso: Administração, Início: 2000, Término: 2005, Instituição: EmpresaX.)</span>
+</p>
+
+<label for="area">Informe sua área profissional:</label>
+<select name="area">
+<option value="adm">Administração</option>
+</select>
+<br />
+
+
+
+<label for="nivel_escolaridade">Informe seu nível de escolaridade:</label>
+<select name="nivel_escolaridade">
+<option value="en_fun_incom">Ensino fundamental incompleto</option>
+<option value="en_fun_compl">Ensino fundamental completo</option>
+<option value="en_sup_incom">Ensino superior incompleto</option>
+<option value="en_sup_compl">Ensino superior completo</option>
+<option value="en_pos_espe">Pós-graduação no nível especialização</option>
+<option value="en_pos_mest">Pós-graduação no nível mestrado</option>
+<option value="en_pos_dout">Pós-graduação no nível doutorado</option>
+</select>
+
+
+<br />
+
+<label for="curso1">Curso:</label>
+<input type="text" name="curso1" style="width:150px;" maxlength="50" placeholder="Ex. Administração."/>
+
+<label for="inicio_curso1">Início:</label>
+<select name="inicio_curso1">
+<option>1999</option>
+</select>
+
+<label for="termino_curso1">Término:</label>
+<select name="termino_curso1">
+<option>1999</option>
+</select>
+
+<label for="instituicao1">Instituição:</label>
+<input type="text" name="instituicao1">
+<br />
+
+
+<label for="curso2">Curso:</label>
+<input type="text" name="curso2" style="width:150px;" maxlength="50" placeholder="Ex. Administração."/>
+
+<label for="inicio_curso2">Início:</label>
+<select name="inicio_curso2">
+<option>1999</option>
+</select>
+
+<label for="termino_curso2">Término:</label>
+<select name="termino_curso2">
+<option>1999</option>
+</select>
+
+<label for="instituicao2">Instituição:</label>
+<input type="text" name="instituicao2">
+
+<br />
+
+<label for="curso3">Curso:</label>
+<input type="text" name="curso3" style="width:150px;" maxlength="50" placeholder="Ex. Administração."/>
+
+<label for="inicio_curso3">Início:</label>
+<select name="inicio_curso3">
+<option>1999</option>
+</select>
+
+<label for="termino_curso3">Término:</label>
+<select name="termino_curso3">
+<option>1999</option>
+</select>
+
+<label for="instituicao3">Instituição:</label>
+<input type="text" name="instituicao3">
+<br />
+
+
+<label for="curso4">Curso:</label>
+<input type="text" name="curso4" style="width:150px;" maxlength="50" placeholder="Ex. Administração."/>
+
+<label for="inicio_curso4">Início:</label>
+<select name="inicio_curso4">
+<option>1999</option>
+</select>
+
+<label for="termino_curso4">Término:</label>
+<select name="termino_curso4">
+<option>1999</option>
+</select>
+
+<label for="instituicao4">Instituição:</label>
+<input type="text" name="instituicao4">
+<br />
+
+<p><span class="planos">Habilidades</span></p>
+<p>Preencha abaixo o nome da habilidade que você possui, seu nível de execução, quando começou, quando terminou
+e em qual instituição desenvolveu a habilidade.
+<br />
+ <span class="exemplo">(Exemplo: Habilidade: Inglês, Nível: Básico, Início:2000, Término: 2005, Instituição: EscolaX)</span>
+</p>
+
+<label for="ingles">Sabe falar inglês?</label>
+<span class="radio">
+<input type="radio" name="ingles" value="sim" />Sim<input type="radio" name="ingles" value="nao" />Não
+<label for="nivel_ingles">Nível:</label>
+<select name="nivel_ingles">
+<option>Básico</option>
+<option>Intermediário</option>
+<option>Avançado</option>
+</select>
+<label for="inicio_ingles">Início:</label>
+<select name="inicio_ingles">
+<option>1999</option>
+</select>
+
+<label for="termino_ingles">Término:</label>
+<select name="termino_ingles">
+<option>1999</option>
+</select>
+
+<label for="instituicao_ingles">Instituição:</label>
+<input type="text" name="instituicao_ingles">
+</span>
+<br />
+
+
+<label for="informatica">Tem conhecimento em informática (Pacote Office)?</label>
+<span class="radio">
+<input type="radio" name="informatica" value="sim" />Sim<input type="radio" name="informatica" value="nao" />Não
+<label for="nivel_ingles">Nível:</label>
+<select name="nivel_ingles">
+<option>Básico</option>
+<option>Intermediário</option>
+<option>Avançado</option>
+</select>
+<label for="inicio_ingles">Início:</label>
+<select name="inicio_ingles">
+<option>1999</option>
+</select>
+
+<label for="termino_ingles">Término:</label>
+<select name="termino_ingles">
+<option>1999</option>
+</select>
+
+<label for="instituicao_ingles">Instituição:</label>
+<input type="text" name="instituicao_ingles">
+</span>
+
+
+
+
+
+
+<p><strong>Outras habilidades:</strong></p>
+<label for="habilidade1">Habilidade:</label>
+<input type="text" name="habilidade1" style="width:150px;" maxlength="50" placeholder="Ex. Administração."/>
+
+<label for="inicio_hab1">Início:</label>
+<select name="inicio_hab1">
+<option>1999</option>
+</select>
+
+<label for="termino_hab1">Término:</label>
+<select name="termino_hab1">
+<option>1999</option>
+</select>
+
+<label for="instituicao_hab1">Instituição:</label>
+<input type="text" name="instituicao_hab1">
+<br />
+<label for="habilidade2">Habilidade:</label>
+<input type="text" name="habilidade2" style="width:150px;" maxlength="50" placeholder="Ex. Administração."/>
+
+<label for="inicio_hab2">Início:</label>
+<select name="inicio_hab2">
+<option>1999</option>
+</select>
+
+<label for="termino_hab2">Término:</label>
+<select name="termino_hab2">
+<option>1999</option>
+</select>
+
+<label for="instituicao_hab2">Instituição:</label>
+<input type="text" name="instituicao_hab2"><br />
+<label for="habilidade3">Habilidade:</label>
+<input type="text" name="habilidade3" style="width:150px;" maxlength="50" placeholder="Ex. Administração."/>
+
+<label for="inicio_hab3">Início:</label>
+<select name="inicio_hab3">
+<option>1999</option>
+</select>
+
+<label for="termino_hab3">Término:</label>
+<select name="termino_hab3">
+<option>1999</option>
+</select>
+
+<label for="instituicao_hab3">Instituição:</label>
+<input type="text" name="instituicao_hab3"><br />
+<label for="habilidade4">Habilidade:</label>
+<input type="text" name="habilidade4" style="width:150px;" maxlength="50" placeholder="Ex. Administração."/>
+
+<label for="inicio_hab4">Início:</label>
+<select name="inicio_hab4">
+<option>1999</option>
+</select>
+
+<label for="termino_hab4">Término:</label>
+<select name="termino_hab4">
+<option>1999</option>
+</select>
+
+<label for="instituicao_hab4">Instituição:</label>
+<input type="text" name="instituicao_hab4"><br />
+<span class="radio">
+<br />
+
+<p><strong>Marque as opções compatíveis com seu currículo:</strong></p>
+
+
+<input type="checkbox" name="CNH_A" value="CNH_A" />CNH A <input type="checkbox" name="CNH_B" value="CNH_B" />CNH B
+<input type="checkbox" name="CNH_C" value="CNH_C" />CNH C
+<input type="checkbox" name="CNH_D" value="CNH_D" />CNH D
+<br />
+<input type="checkbox" name="disponivel_viagem"  />Disponível para viagem
+<br />
+<label for="horario_disp">Disponibilidade de horário:</label>
+<input type="checkbox" name="horario_disp"/>Manhã
+<input type="checkbox" name="horario_disp"/>Tarde
+<input type="checkbox" name="horario_disp"/>Noite
+</br>
+
+<label for="pretensao">Pretensão salarial:</label>
+<input type="number" name="pretensao"/>
+<input type="checkbox" name="pretensao" /> A combinar
+
+</span>
+
+<p><span class="planos">Histórico profissional</span></p>
+<p>Aqui você deve informar sobre sua experiência profissional passada.</p>
+
+<fieldset>
+<label for="nome_empresa">Empresa em que trababalhou:</label>
+<input name="nome_empresa" type="text" placeholder="Digite o nome da empresa." style="width:200px;"/>
+<br />
+<label for="ano">Ano em que trabalhou: 
+</label>
+<select name="ano">
+<option>2005</option>
+</select>
+<br />
+<label for="periodo_valor">Por um perído de: 
+</label>
+<select name="periodo_valor">
+<option>5</option>
+</select>
+
+<select name="periodo_tipo">
+<option>meses</option>
+<option>anos</option>
+</select>
+<br />
+<label for="cargo">Seu cargo:</label>
+<input name="cargo" type="text" placeholder="Que função você ocupava?" style="width:200px;"/>
+<br />
+<label for="responsabilidades">Faça uma breve descrição das suas responsabilidades:</label><br />
+<textarea placeholder="Que atividades você executava? Máximo de 300 caracteres." rows="4" cols="100" style="width:400;height:200;" spellcheck="true" maxlength="300" name="responsabilidades"></textarea>
+<br />
+<br />
+
+
+<label for="nome_empresa2">Empresa em que trababalhou:</label>
+<input name="nome_empresa2" type="text" placeholder="Digite o nome da empresa." style="width:200px;"/>
+<br />
+<label for="ano2">Ano em que trabalhou: 
+</label>
+<select name="ano2">
+<option>2005</option>
+</select>
+<br />
+<label for="periodo_valor2">Por um perído de: 
+</label>
+<select name="periodo_valor2">
+<option>5</option>
+</select>
+
+<select name="periodo_tipo2">
+<option>meses</option>
+<option>anos</option>
+</select>
+<br />
+<label for="cargo2">Seu cargo:</label>
+<input name="cargo2" type="text" placeholder="Que função você ocupava?" style="width:200px;"/>
+<br />
+<label for="responsabilidades2">Faça uma breve descrição das suas responsabilidades:</label><br />
+<textarea placeholder="Que atividades você executava? Máximo de 300 caracteres." rows="4" cols="100" style="width:400;height:200;" spellcheck="true" maxlength="300" name="responsabilidades2"></textarea>
+<br />
+
+
+
+
+
+</fieldset>
+
+
+<p><span class="planos">Outras informações</span></p>
+<p>Escreva aqui alguma outra informação que você considera pertinente sobre seu currículo:</p>
+<textarea placeholder="Máximo de 300 caracteres." rows="4" cols="100" style="width:400;height:200;" spellcheck="true" maxlength="300" name="outras"></textarea>
+<br />
+<br />
+
+<input type="submit" value="Registrar" style="margin-left:30%;"/>
+
+
+
+</fieldset>
+</form>
+
+</body>
+</html>

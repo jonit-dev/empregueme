@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<title>Untitled Document</title>
+<style type="text/css">
+@import url('css/anuncio_interno.css');
+@import url('fonts/fonts.css');
+</style>
+
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+<!--Load google maps API-->
+<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHfuxs8gZVjrDuI7sB9-kNgOobvVEPBBc&sensor=true">
+    </script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+<script type="application/javascript" src="js/google_maps_api.js"></script>  
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+    
+	$("#zoom_bkg").hide();
+	$("#zoom_foto_box").hide();
+	$("#zoom_close").hide();
+	
+	$("#zoom_foto").click(function(){
+		
+		$("#zoom_bkg").fadeIn(500,0,
+		//callback
+		$("#zoom_foto_box").fadeIn(1500));
+		
+		//mostra botao de fechar
+		$("#zoom_close").fadeIn(2000);
+		
+		
+	});//end click
+	
+	
+$("#zoom_close").click(function(){
+	
+		$("#zoom_bkg").fadeOut(500);
+		$("#zoom_foto_box").fadeOut(500);
+	
+	});//end zoom close	
+	
+	//fecha zoom foto se clicar fora da foto
+$(document).mouseup(function (e)
+{
+    var container = $("#zoom_foto_box");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.hide();
+		$("#zoom_close, #zoom_bkg").hide();
+    }
+});
+		
+	
+	
+});//end ready
+</script>
+
+</head>
+
+
+<body onload="codeAddress()">
+
+
+<!-- GOOGLE MAPS API-->
+<div id="panel">
+      <input id="address" type="hidden" value="29060-260">
+      
+    </div>
+    <div id="map-canvas"></div>
+
+<!-- GOOGLE MAPS API-->
+
+<!-- ZOOM FOTO-->
+
+<div id="zoom_bkg">&amp;</div>
+
+
+      <div id="zoom_wrap">
+          <div id="zoom_foto_box">
+              <img src="115_grande.jpeg" />
+          </div>
+          
+          <div id="zoom_close"></div>
+          
+	</div>
+<!-- END ZOOM FOTO-->
+
+
+
+<div class="anuncio_nome">Galaxy Tab 3</div>
+
+      <div id="anuncio_foto">
+      <a href="javascript:void(0)" id="zoom_foto">
+		     <img src="115_pequena.jpeg" />
+       </a>     
+       </div>
+   	<div id="anuncio_desc">Clique na imagem para aumentar de tamanho</div>
+      
+<div class="anuncio_titulo">Galaxy Tab 3 Barato! Direto dos EUA - Frete grátis</div>      
+
+<div class="anuncio_info">
+<strong>Tipo do produto:</strong> Novo
+<br />
+<strong>Anunciado em:</strong> 21/01/14
+<strong>Vendidos:</strong> 0<br />
+<strong>Forma de entrega:</strong> Retirar no local de venda<br />
+<strong>Frete:</strong> <span class="link">Clique aqui para calcular</span> <br />
+
+<div id="anuncio_comprar_box">
+
+		<div id="anuncio_prec_txt">
+        	<span class="anuncio_txt">Preço:</span>
+		</div>
+        
+        <div id="preco_reais">1999</div>
+          <div id="preco_centavos">,90</div>
+		<img src="gfx/ui/btm_preco.png" id="anuncio_btm_comprar"/>
+
+</div>
+
+
+<div id="anuncio_descricao_fundo">
+	<strong>Descrição:</strong> Entre num mundo completamente novo com o GALAXY Tab 3 na ponta dos dedos. Mais elegante e com uma moldura mais fina, este novo e melhorado Tab proporciona uma utilização incrível para fácil manuseamento em movimento!
+</div>
+
+
+<div id="anuncio_vendedor">
+	<div id="anuncio_vendedor_titulo">Informações do vendedor</div>
+    <div id="anuncio_vendedor_info">
+    	<strong>Apelido:</strong><span class="link"><strong> jonit</strong></span><br />
+		<strong>CEP:</strong> 29060260<br />
+		<strong>Estado:</strong> ES<br />
+		<strong>Cidade:</strong> Vitória<br />
+    
+    </div>
+</div>
+
+
+<div id="anuncio_condicoes">
+	<div id="anuncio_condicoes_titulo">Condições de pagamento</div>
+    <div id="anuncio_condicoes_info">
+    	<strong>Formas de pagamento:</strong> À vista, cartão de crédito
+<br />
+<strong>Divisões no prazo: 16x</strong>
+    	
+    
+    </div>
+</div>
+
+
+
+<div id="anuncio_video">
+	<div id="anuncio_video_titulo">Vídeo do produto</div>
+    <div id="anuncio_video_info">
+    	<iframe width="304" height="213" src="https://www.youtube.com/embed/0CQimrG6eB8" frameborder="0" allowfullscreen></iframe>
+    
+    </div>
+</div>
+
+</div>
+
+
+</body>
+</html>

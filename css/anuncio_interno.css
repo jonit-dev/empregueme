@@ -1,0 +1,499 @@
+@charset "utf-8";
+/* CSS Document */
+
+#print_page
+{
+position:absolute;
+top:100px;
+left:100px;	
+}
+
+#favorito_item
+{
+position:absolute;
+top:17px;
+left:170px;	
+width:200px;
+
+}
+.img_favoritos
+{
+display:inline-block;
+float:left;	
+width:24px;
+height:24px;
+}
+.txt_favoritos
+{
+margin-top:5px;
+display:inline-block;
+float:left;	
+width:160px;	
+height:auto;
+font-family:'lucida_granderegular';
+font-size:11px;
+color:#ffda0f;
+font-weight:bold;
+text-shadow: 1px 1px 0 #000000;
+
+
+
+
+
+}
+
+.texto_cv
+{
+margin-left:20px;	
+}
+.titulo_cor
+{
+color:#be1819;	
+}
+
+/*FACEBOOK PLUGIN*/
+#like_box
+{
+margin-top:20px;	
+}
+
+
+
+/*END FACEBOOK PLUGIN*/
+
+#map-canvas
+{
+	margin-top:10px;
+	width:210px;
+	height:200px;
+	z-index:2;
+ }
+
+
+.anuncio_nome
+{
+	   font-family: 'lucida_grandebold';
+	   font-size:30px;
+position:absolute;
+top:0px;
+left:0px;	
+width:697px;
+overflow:hidden;
+}
+#anuncio_cat
+{
+position:absolute;
+top:38px;
+left:15px;
+	font-family: 'lucida_granderegular';
+	font-size:12px;
+	color:#999;	
+}
+
+#anuncio_desc
+{
+	position:absolute;
+	top:300px;
+	left:27px;
+	font-family: 'lucida_granderegular';
+	font-size:10px;
+	color:#999;
+}
+
+#anuncio_btm_comprar
+{
+	position:absolute;
+	top:56px;
+	left:157px;
+	
+}
+
+.anuncio_titulo
+{
+	font-family: 'lucida_grandebold';
+	font-size:22px;
+	position:absolute;
+	top:50px;
+	left:283px;
+}
+
+#anuncio_foto
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+	
+	position:absolute;
+	top:50px;
+	left:23px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#c7c7c7;
+	width:auto;height:auto;
+	
+	-webkit-border-radius: 04px;
+-moz-border-radius: 04px;
+border-radius: 04px;
+	
+}
+
+
+
+#informacoes_candidato
+{
+
+	position:absolute;
+	top:-10%;
+	left:90%;
+	
+	
+	border-style:solid;
+	border-width:1px;
+	border-color:#c7c7c7;
+	width:55%;
+	height:300px;
+	-webkit-border-radius: 04px;
+	-moz-border-radius: 04px;
+	border-radius: 04px;
+	
+		padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+	background-image:url(../gfx/ui/sellerinfo.png);
+	background-repeat:no-repeat;
+	background-position:10px 10px;
+	
+}
+
+
+
+
+
+
+
+#anuncio_vendedor
+{
+
+	position:absolute;
+	top:-50%;
+	left:125%;
+	
+	
+	border-style:solid;
+	border-width:1px;
+	border-color:#c7c7c7;
+	width:55%;
+	height:300px;
+	-webkit-border-radius: 04px;
+	-moz-border-radius: 04px;
+	border-radius: 04px;
+	
+		padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+	background-image:url(../gfx/ui/sellerinfo.png);
+	background-repeat:no-repeat;
+	background-position:10px 10px;
+	
+}
+#anuncio_vendedor_titulo
+{
+	position:absolute;
+	top:13px;
+	left:40px;
+	width: 200px;
+	font-family: 'lucida_grandebold';
+}
+#anuncio_vendedor_info
+{
+	position:absolute;
+	top:40px;
+	left:34px;
+	width: 200px;
+	font-family: 'lucida_granderegular';
+}
+
+#anuncio_vendedor_reputacao
+{
+	position:absolute;
+	top:42px;
+	left:170px;
+	width: 200px;
+	font-family: 'lucida_granderegular';
+}
+
+#anuncio_opcoes_recrutador
+{
+	position:absolute;
+	top:290px;
+	left:421px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#c7c7c7;
+	width:259px;
+	height:95px;
+	-webkit-border-radius: 04px;
+	-moz-border-radius: 04px;
+	border-radius: 04px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+	background-image:url(../gfx/ui/engine.png);
+	background-repeat:no-repeat;
+	background-position:10px 10px;
+}
+.anuncio_titulo
+{
+	position:relative;
+	top:7px;
+	left:33px;	
+		font-family: 'lucida_grandebold';
+		font-size:12px;
+}
+.anuncio_conteudo
+{
+	width:221px;
+	height:121px;
+	position:relative;
+	top:25px;
+	left:30px;	
+		font-family: 'lucida_granderegular';
+		font-size:12px;
+}
+
+#impressora
+{
+position:absolute;
+top:-50px;
+left:650px;
+width:26px;
+height:26px;
+background-image:url(../gfx/ui/printer.png);
+background-repeat:no-repeat;
+
+}
+
+
+#anuncio_condicoes_titulo
+{
+	position:absolute;
+	top:13px;
+	left:40px;
+	width: 200px;
+	font-family: 'lucida_grandebold';
+}
+#anuncio_condicoes_info
+{
+	position:absolute;
+	top:40px;
+	left:34px;
+	width: 299px;
+	font-family: 'lucida_granderegular';
+}
+
+
+#anuncio_vip
+{
+
+	position:absolute;
+top:250%;
+	left:125%;
+	
+	
+border-style:solid;
+	border-width:1px;
+	border-color:#c7c7c7;
+	width:55%;
+	height:160px;
+	-webkit-border-radius: 04px;
+	-moz-border-radius: 04px;
+	border-radius: 04px;
+	
+		padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+	background-image:url(../gfx/ui/medalha.png);
+	background-repeat:no-repeat;
+	background-position:10px 10px;
+	
+}
+#anuncio_vip_titulo
+{
+	position:absolute;
+	top:13px;
+	left:40px;
+	width: 200px;
+	font-family: 'lucida_grandebold';
+}
+#anuncio_vip_info
+{
+		position:absolute;
+	top:40px;
+	left:34px;
+	width: 200px;
+	font-family: 'lucida_granderegular';
+}
+
+
+
+
+
+
+
+.anuncio_info
+{
+	font-family: 'lucida_granderegular';
+	color:#333;
+	font-size:13px;
+	position:absolute;
+	top:60px;
+	left:20px;
+	width: 468px;
+	height: 108px;
+	
+
+}
+.anuncio_rep
+{
+font-family: 'lucida_granderegular';
+	color:#666;
+	font-size:11px;
+	
+}
+
+.link
+{
+color:#009900;	
+}
+
+#candidatar_box
+{
+	margin-top:10px;
+	width:85%;
+	height:83px;
+	background-color:#f5f5f5;
+	border:solid 1px #d9d9d9;
+	
+}
+
+.anuncio_txt
+{
+font-family: 'lucida_granderegular';
+	font-size:12px;
+	color:#333;	
+}
+
+#anuncio_prec_txt
+{
+	position:absolute;
+	top:25px;
+	left:158px;
+}
+
+#preco_reais
+{
+	font-family: 'lucida_grandebold';
+	font-size:24px;
+	display:inline-block;
+	float:left;
+	color:#bb0000;
+	text-shadow: 1px 1px 1px #000000;
+	
+}
+#preco_centavos
+{
+	display:inline-block;
+	float:left;
+	font-family: 'lucida_grandebold';
+	font-size:12px;
+	color:#bb0000;
+	text-shadow: 1px 1px 1px #000000;
+	display:block;
+	
+}
+#preco
+{
+	position:relative;
+	top:16px;
+	left:195px;
+width:120px;
+height:30px;
+
+}
+
+
+#anuncio_descricao_fundo
+{
+	position:relative;
+	top:330px;
+	left:20px;
+	width: 694px;
+	font-family: 'lucida_granderegular';
+	font-size:12px;
+	color:#333;	
+}
+
+.btm_cadastrar
+{
+	margin-top:20px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #615b61;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #615b61;
+	box-shadow:inset 0px 1px 0px 0px #615b61;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c20b0e), color-stop(1, #7f1313) );
+	background:-moz-linear-gradient( center top, #c20b0e 5%, #7f1313 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c20b0e', endColorstr='#7f1313');
+	background-color:#c20b0e;
+	-webkit-border-top-left-radius:11px;
+	-moz-border-radius-topleft:11px;
+	border-top-left-radius:11px;
+	-webkit-border-top-right-radius:11px;
+	-moz-border-radius-topright:11px;
+	border-top-right-radius:11px;
+	-webkit-border-bottom-right-radius:11px;
+	-moz-border-radius-bottomright:11px;
+	border-bottom-right-radius:11px;
+	-webkit-border-bottom-left-radius:11px;
+	-moz-border-radius-bottomleft:11px;
+	border-bottom-left-radius:11px;
+	text-indent:0;
+	display:inline-block;
+	color:white;
+		font-family: 'lucida_granderegular';
+	font-size:16px;
+	font-weight:bold;
+	font-style:normal;
+	height:42px;
+	line-height:42px;
+	width:154px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #0a000a;
+}
+.btm_cadastrar:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7f1313), color-stop(1, #c20b0e) );
+	background:-moz-linear-gradient( center top, #7f1313 5%, #c20b0e 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7f1313', endColorstr='#c20b0e');
+	background-color:#7f1313;
+}
+.btm_cadastrar:focus
+{
+outline:none;	
+}
+
+#banner_adsense
+{
+position:absolute;
+top:580px;
+left:800px;
+}
+#banner_adsense2
+{
+position:absolute;
+top:370px;
+left:0px;
+}

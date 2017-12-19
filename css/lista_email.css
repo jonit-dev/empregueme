@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul
+{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+ul li
+{
+background-image: url(../gfx/ui/checklist.png);
+background-repeat: no-repeat;
+background-position: 0px 0px; 
+padding-left: 20px; 
+}
+
+
+#email_list_skip
+{
+position:absolute;
+top:280px;
+left:420px;
+color:gray;
+
+	font-family:'lucida_granderegular';
+	font-size:10px;
+	
+}

@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+    background-color:white;	
+}
+*
+{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;	
+}
+a, a:link, a:visited
+{
+    text-decoration:underline;
+    color:#333;
+}
+#photo
+{
+    width:304;height:59;
+    //position:absolute;
+    top:23%;
+    left:45%;
+}
+
+.radio
+{
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size:13px;	
+    color:#333;	
+}
+.exemplo
+{
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size:12px;	
+    color:silver;	
+}
+
+/*VALIDACAO DE FORM*/
+.validacoes{
+    padding:4px;
+    padding-left:25px;
+    background-color:#f0ff8c;
+    //background-image: url('../images/shared/icon_alerta.png');
+    background-repeat: no-repeat;
+    opacity: 0.8
+}
+
+img{ border: none;}
+
+#campo_obrigatorio
+{
+    font-size:9px;
+    color:#F00;
+}

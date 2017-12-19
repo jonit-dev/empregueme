@@ -1,0 +1,391 @@
+@charset "utf-8";
+/* CSS Document */
+
+#top_header
+{
+width:100%;
+height:95px;
+opacity:.3;
+filter: alpha(opacity=30); /* For IE8 and earlier */
+background-color:#070707;	
+
+position:fixed;
+top:0px;
+left:0px;
+
+z-index:100;
+
+}
+
+#background_image
+{
+	width:100%;
+	height:727px;
+position:absolute;
+top:-150px;
+left:0px;
+background-image:url(../gfx/index/women-business-owner.jpg);
+background-size:cover;	
+
+z-index:0;
+}
+
+#logo
+{
+width:269px;
+height:41px;
+background-image:url(../gfx/index/logo.png);
+background-repeat:no-repeat;
+position:fixed;
+top:25px;
+left:100px;	
+z-index:10000;
+}
+
+.login_input
+{
+display:inline-block;
+float:left;
+margin-left:5px;	
+	
+}
+
+.login_input_txt
+{
+position:relative;
+top:-10px;
+left:0px;	
+font-family: 'latoregular';
+font-size:14px;
+color:white;
+}
+
+.esqueci_senha_txt
+{
+position:relative;
+top:5px;
+left:0px;	
+font-family: 'latoregular';
+font-size:12px;
+color:white;
+opacity:.5;
+filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.esqueci_senha_txt:hover
+{
+opacity:1;
+filter: alpha(opacity=100); /* For IE8 and earlier */	
+}
+
+.login_input > input
+{
+	width:176px;
+	height:25px;
+	padding-left:5px;
+		outline-color:#900;
+	
+}
+
+
+#login_box
+{
+position:fixed;
+top:20px;
+right:120px;
+z-index:10000;	
+}
+
+
+.input_submit {
+    background:url(../gfx/index/Entrar.png);
+    border: 0;
+    display: block;
+    height: 34px;
+    width: 91px;
+	position:fixed;
+	top:32px;
+	right:20px;
+}
+
+#main_txt
+{
+position:absolute;
+top:150px;
+left:100px;
+    font-family: 'latolight';
+font-size:44px;
+color:white;
+z-index:0;
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.43);
+
+}
+.txt_bold
+{
+	 font-family: 'latobold';
+}
+
+#submain_txt
+{
+position:absolute;
+top:210px;
+left:102px;
+	
+width:581px;
+height:52px;
+
+    font-family: 'latoregular';
+font-size:20px;
+color:white;
+
+
+opacity:.9;
+filter: alpha(opacity=90); /* For IE8 and earlier */
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.60);
+z-index:0;
+
+	
+}
+
+
+#beneficios
+{
+width:547px;
+height:224px;
+position:relative;
+top:300px;
+left:150px;	
+z-index:100;
+
+}
+.item_beneficio
+{
+width:144px; height:173px;
+display:inline-block;
+float:left;
+background-image:url(../gfx/index/base.png);
+background-repeat:no-repeat;
+margin-left:20px;
+}
+.beneficio_txt
+{
+	font-family: 'latobold';
+font-size:12px;
+color:white;
+position:relative;
+top:110px;
+left:0px;
+width:140px;
+text-shadow: 1px 1px 3px #3D3D3D;
+}
+.img_beneficio
+{
+position:relative;
+top:43px;
+left:45px;	
+}
+
+#box_cadastro
+{
+position:relative;
+top:-125px;;
+left:800px;
+z-index:0;
+
+	
+width:357px;
+height:auto;
+padding-bottom:85px;
+background-color:white;
+
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+
+-webkit-box-shadow: 4px 4px 3px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    4px 4px 3px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         4px 4px 3px 0px rgba(50, 50, 50, 0.75);
+
+}
+
+
+
+
+	
+	.box_cadastro_title
+	{
+		font-family: 'latobold';
+font-size:36px;
+color:#1f1f1f;
+position:absolute;
+top:20px;
+left:22px;
+
+	}
+	
+	.box_cadastro_subtitle
+	{
+			font-family: 'latoregular';
+font-size:14px;
+color:#1f1f1f;
+position:relative;
+top:5px;
+left:5px;
+	}
+	
+	.input_create_account
+{
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+
+border-style:solid;
+border-width:1px;
+border-color:#c7c7c7;
+
+width:282px;
+height:27px;
+
+padding-left:10px;
+
+ font-family: 'latoregular';
+	font-size:18px;
+	
+}
+
+#box_cadastro_form
+{
+position:relative;
+top:80px;
+left:50px;	
+}
+
+/*FORMULARIO CRIAÇÃO DE CONTA*/
+.alert
+{
+	display:none;
+	float:left;
+width:300px;
+height:18px;
+background-image:url(../gfx/ui/alert.png);
+background-repeat:no-repeat;	
+font-size:10px;
+color:red;
+padding-left:20px;
+padding-top:6px;
+}
+
+
+
+
+.valid
+{
+	display:none;
+	float:left;
+width:300px;
+height:18px;
+background-image:url(../gfx/ui/valid.png);
+background-repeat:no-repeat;	
+font-size:10px;
+color:green;
+margin-top:3px;
+padding-left:20px;
+padding-top:4px;
+}
+
+/*END FORMULARIO CRIAÇÃO DE CONTA*/
+
+.fonte_pequena
+{
+	font-size:9px;	
+	font-family: 'lucida_granderegular';
+	color:gray;
+}
+
+.txt_radio
+{
+		font-family: 'lucida_granderegular';
+	font-size:15px;
+	color:#333;
+	font-weight:bold;
+	margin-top:10px;
+
+}
+#disclaimer
+{
+	margin-top:5px;
+width:329px;	
+}
+
+#btm_cta_registrar
+{
+margin-left:10px;	
+}
+
+.input_registrar {
+    background:url(../gfx/index/btm_cta_registrar.png);
+    border: 0;
+    display: block;
+    height: 46px;
+    width: 283px;
+
+}
+
+#empresas_anunciantes
+{
+width:773px;
+height:69px;
+position:absolute;
+top:580px;
+left:10px;	
+
+font-size:16px;	
+	font-family: 'latolight';
+	color:gray;
+}
+.item_anunciante
+{
+display:inline-block;
+float:left;
+width:110px;
+height:45px;
+
+}
+
+#seta_cadastro
+{
+	background-image:url(../gfx/index/arrow_preview.png);
+	background-repeat:no-repeat;
+	z-index:100;
+width:119px;
+height:105px;
+position:absolute;
+top:50px;
+right:520px;	
+}
+
+#opcoes_header
+{
+position:fixed;
+top:35px;
+left:420px;
+z-index:10000;
+
+}
+.opcao_item
+{
+	margin-left:20px;
+font-family: 'latolight';
+	font-size:18px;
+	color:white;	
+	
+	display:inline-block;
+	float:left;
+	
+	width:116px;
+	height:26px;
+}
+.opcao_item:hover
+{
+color:#900;	
+}

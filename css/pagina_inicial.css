@@ -1,0 +1,364 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*FORMULARIO CRIAÇÃO DE CONTA*/
+.alert
+{
+	display:none;
+	float:left;
+width:300px;
+height:18px;
+background-image:url(../gfx/ui/alert.png);
+background-repeat:no-repeat;	
+font-size:10px;
+color:red;
+padding-left:20px;
+padding-top:6px;
+}
+
+
+
+
+.valid
+{
+	display:none;
+	float:left;
+width:300px;
+height:18px;
+background-image:url(../gfx/ui/valid.png);
+background-repeat:no-repeat;	
+font-size:10px;
+color:green;
+margin-top:3px;
+padding-left:20px;
+padding-top:4px;
+}
+
+/*END FORMULARIO CRIAÇÃO DE CONTA*/
+
+
+/*FACEBOOK PLUGINS*/
+#fb_box
+{
+margin-left:30%;
+position:relative;	
+width:301px;
+height:274px;
+
+}
+#fb_ja_curti
+{
+position:absolute;
+top:294px;
+left:70px;	
+}
+
+
+/*end facebook*/
+
+
+#header_topo
+{
+width:100%;
+height:66px;
+background-color:#242424;	
+position:fixed;
+-webkit-transform: translateZ(0);
+  z-index: 50;
+}
+#logo
+{
+	position:absolute;
+	top:5px;
+	left:10px;
+	width:283px;
+	height:57px;
+	background-image:url(../gfx/logo.png);
+	background-origin:0px 0px;
+	background-repeat:no-repeat;
+}
+#login_box
+{
+	position:absolute;
+	top:19px;
+	right:50px;
+	width: 387px;	
+}
+#ultimas_vagas
+{
+	position:absolute;
+	top:87px;
+	left:55px;
+	width:850px;
+	height:500px;
+}
+#form_create_account
+{
+	position:absolute;
+	top:67px;
+	left:8px;
+	height: 415px;
+}
+#content_index
+{
+	position:absolute;
+	top:90px;
+	left:750px;
+	width:350px;
+	height:500px
+}
+.subtitle
+{
+	position:relative;
+	top:5px;
+	left:20px;
+	font-family: 'lucida_granderegular';
+	font-size:13px;
+	color:#333;
+}
+
+.input_index
+{
+width:161px;
+height:26px;
+border-style:solid;
+border-color:#242424;
+border-width:1px;	
+font-family: 'lucida_granderegular';
+font-size:12px;
+
+padding-left:5px;
+}
+
+
+.input_submit {
+	position:absolute;
+	top:0px;
+	right:-30px;
+	
+	
+	-moz-box-shadow:inset 0px 1px 0px 0px #474647;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #474647;
+	box-shadow:inset 0px 1px 0px 0px #474647;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #292929), color-stop(1, #454145) );
+	background:-moz-linear-gradient( center top, #292929 5%, #454145 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#454145');
+	background-color:#292929;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #2b2a2b;
+	display:inline-block;
+	color:white;
+	font-family: 'lucida_granderegular';
+	font-size:12px;
+	font-weight:bold;
+	font-style:normal;
+	height:27px;
+	line-height:27px;
+	width:74px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #141314;
+}
+.input_submit:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #454145), color-stop(1, #292929) );
+	background:-moz-linear-gradient( center top, #454145 5%, #292929 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#454145', endColorstr='#292929');
+	background-color:#454145;
+}
+
+
+.input_submit:active {
+position:absolute;
+	top:1px;
+	right:-29px;
+
+	
+}
+.input_submit:focus
+{
+outline:none;	
+}
+
+.title
+{
+	 font-family: 'lucida_grandebold';
+	font-size:30px;
+	color:#2f2f2f;
+}
+
+.input_create_account
+{
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+
+border-style:solid;
+border-width:1px;
+border-color:#c7c7c7;
+
+width:320px;
+height:35px;
+
+padding:4px 4px 4px 4px;
+
+ font-family: 'lucida_granderegular';
+	font-size:20px;
+	
+}
+#user_foto
+{
+	position:absolute;
+	top:330px;
+	left:4px;
+}
+#input_upload
+{
+	position:absolute;
+	top:340px;
+	left:69px;
+}
+#foto_detalhe
+{
+	position:absolute;
+	top:370px;
+	left:70px;
+	width:304px;
+	font-family: 'lucida_granderegular';
+	font-size:11px;
+	color:gray;
+}
+#foto_texto
+{
+	position:absolute;
+	top:325px;
+	left:70px;
+	width:304px;
+	font-family: 'lucida_granderegular';
+	font-size:13px;
+	color:#333;
+}
+
+
+
+#btm_nova_conta
+{
+	width:192px;
+	height:45px;
+	
+}
+
+.txt_radio
+{
+		font-family: 'lucida_granderegular';
+	font-size:15px;
+	color:#333;
+	font-weight:bold;
+	margin-top:10px;
+
+}
+
+
+
+.input_btm_nova_conta
+{
+	-moz-box-shadow:inset 0px 1px 0px 0px #615b61;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #615b61;
+	box-shadow:inset 0px 1px 0px 0px #615b61;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c20b0e), color-stop(1, #7f1313) );
+	background:-moz-linear-gradient( center top, #c20b0e 5%, #7f1313 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c20b0e', endColorstr='#7f1313');
+	background-color:#c20b0e;
+	-webkit-border-top-left-radius:11px;
+	-moz-border-radius-topleft:11px;
+	border-top-left-radius:11px;
+	-webkit-border-top-right-radius:11px;
+	-moz-border-radius-topright:11px;
+	border-top-right-radius:11px;
+	-webkit-border-bottom-right-radius:11px;
+	-moz-border-radius-bottomright:11px;
+	border-bottom-right-radius:11px;
+	-webkit-border-bottom-left-radius:11px;
+	-moz-border-radius-bottomleft:11px;
+	border-bottom-left-radius:11px;
+	text-indent:0;
+	display:inline-block;
+	color:#d4d4d4;
+		font-family: 'lucida_granderegular';
+	font-size:16px;
+	font-weight:bold;
+	font-style:normal;
+	height:42px;
+	line-height:42px;
+	width:154px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #0a000a;
+}
+.input_btm_nova_conta:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7f1313), color-stop(1, #c20b0e) );
+	background:-moz-linear-gradient( center top, #7f1313 5%, #c20b0e 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7f1313', endColorstr='#c20b0e');
+	background-color:#7f1313;
+}.input_btm_nova_conta:active {
+
+}
+.input_btm_nova_conta:focus
+{
+outline:none;	
+}
+/* This button was generated using CSSButtonGenerator.com */	
+
+.btm_error
+{
+position:absolute;
+bottom:20px;
+left:40%;	
+}
+
+#email_txt
+{
+	position:absolute;
+	top:-15px;
+	left:0px;
+	font-family: 'lucida_granderegular';
+	font-size:12px;
+	color:white;
+}
+#senha_txt
+{
+	position:absolute;
+	top:-15px;
+	left:172px;
+	font-family: 'lucida_granderegular';
+	font-size:12px;
+	color:white;
+}
+#esqueci_senha
+{
+	position:absolute;
+	top:33px;
+	left:175px;
+	font-family: 'lucida_granderegular';
+	font-size:10px;
+	color:gray;
+}
+
+.fonte_pequena
+{
+	font-size:9px;	
+	font-family: 'lucida_granderegular';
+	color:gray;
+}

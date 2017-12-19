@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+.box_transacao
+{
+	position:relative;
+width:605px;
+height:118px;
+background-color:#f4f4f4;
+
+-webkit-border-radius: 13px;
+-moz-border-radius: 13px;
+border-radius: 13px;
+
+border-style:solid;
+border-width:1px;
+border-color:#e0e0e0;
+margin-bottom:10px;
+}
+.box_transacao:hover
+{
+		background-color:#f1f0f0;
+}
+.btm_transacao
+{
+	position:absolute;
+	top:35px;
+	left:-12px;
+}
+.box_transacao_foto_produto
+{
+	position:absolute;
+	top:13px;
+	left:30px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#e0e0e0;
+	
+}
+.box_transacao_tag
+{
+	position:absolute;
+	top:12px;
+	left:126px;
+	font-family: 'lucida_grandebold';
+	font-size:12px;
+	width: 168px;
+	overflow-y:hidden;
+	color:#83ad06;
+}
+.box_transacao_info
+{
+	position:absolute;
+	top:28px;
+	left:127px;
+	font-family: 'lucida_granderegular';
+	font-size:10px;
+	width: 308px;
+	overflow-y:hidden;
+}
+.box_transacao_txt
+{
+color:gray;	
+}
+.box_transacao_status
+{
+	position:absolute;
+	top:8px;
+	left:350px;
+	font-family: 'lucida_grandebold';
+	font-size:10px;
+
+	width: 300px;
+}
+.box_transacao_btm
+{
+	
+	width:118px;
+	height:25px;
+	background-image:url(../gfx/ui/btm_bkg.png);
+	background-repeat:no-repeat;
+	background-origin:0px 0px;
+	border-style:none;
+	
+	font-family: 'lucida_grandebold';
+	font-size:10px;
+	color:white;
+	text-shadow: 0 1px 2px #000000;
+	
+}
+.box_transacao_btm:focus
+{
+	outline:none;
+}
+#btm_pagar
+{
+position:absolute;
+	top:31px;
+	left:466px;	
+}
+#btm_pagar:active
+{
+position:absolute;
+	top:33px;
+	left:466px;
+	
+}
+#btm_ja_paguei
+{
+position:absolute;
+	top:61px;
+	left:466px;	
+}
+#btm_ja_paguei:active
+{
+	position:absolute;
+	top:63px;
+	left:466px;
+}

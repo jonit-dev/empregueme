@@ -1,0 +1,247 @@
+@charset "utf-8";
+/* CSS Document */
+.box_item_wrap
+{
+		display:inline-block;
+	float:left;
+	width:807px;
+	
+}
+.box_vaga
+{
+	display:inline-block;
+	float:left;
+	
+	
+	margin-top:10px;
+	
+width:807px;
+height:36px;
+
+padding-bottom:5px;
+
+
+border-width:1px;
+border-style:solid;
+border-color:#d7d7d7;
+
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+
+-webkit-box-shadow: 4px 3px 0px 0px rgba(242,242,242,1);
+-moz-box-shadow: 4px 3px 0px 0px rgba(242,242,242,1);
+box-shadow: 4px 3px 0px 0px rgba(242,242,242,1);
+
+background: rgb(255,255,255); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI0MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MiUiIHN0b3AtY29sb3I9IiNmNmY2ZjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZWRlZGVkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 40%, rgba(246,246,246,1) 52%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(40%,rgba(255,255,255,1)), color-stop(52%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 40%,rgba(246,246,246,1) 52%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 40%,rgba(246,246,246,1) 52%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 40%,rgba(246,246,246,1) 52%,rgba(237,237,237,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 40%,rgba(246,246,246,1) 52%,rgba(237,237,237,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-8 */
+
+}
+.box_mostra_cv
+{
+	
+background-image:url(../gfx/ui/painel_gerenciamento_cv/mostra_cv.png);
+background-repeat:no-repeat;
+
+width:150px;
+height:17px;
+
+padding-top:2px;
+
+
+position:relative;
+top:-48px;
+left:650px;	
+
+ font-family: 'lucida_granderegular';
+	font-size:10px;
+	color:#4b4b4b;
+	font-weight:bold;
+}
+.box_arrow
+{
+background-image:url(../gfx/ui/painel_gerenciamento_cv/Seta.png);
+width:17px;
+height:11px;
+
+position:relative;
+top:13px;
+left:14px;
+
+
+}
+
+.box_titulo
+{
+position:relative;
+top:-13px;
+left:35px;
+
+    font-family: 'lucida_granderegular';
+	font-size:11px;
+	color:#4b4b4b;
+	font-weight:bold;
+	
+	width:220px;
+	height:20px;
+	}
+	
+.box_calendar
+{
+
+	background-image:url(../gfx/ui/painel_gerenciamento_cv/calendario.png);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+width:180px;
+height:14px;
+
+padding-top:2px;
+
+position:relative;
+top:3px;
+left:260px;
+
+ font-family: 'lucida_granderegular';
+	font-size:10px;
+	color:#cacaca;
+}
+
+.box_candidatos
+{
+		background-image:url(../gfx/ui/painel_gerenciamento_cv/candidatos.png);
+	background-repeat:no-repeat;
+	position:relative;
+top:-32px;
+left:420px;
+width:120px;
+
+ font-family: 'lucida_granderegular';
+	font-size:10px;
+	
+}
+
+.box_content
+{
+width:807px; 
+max-height:104px;
+overflow-y:auto;
+overflow-x:hidden;
+
+display:inline-block;
+float:left;
+
+margin-top:10px;
+
+	
+}
+.box_candidato
+{
+	margin-top:0px;
+width:782px; height:18px;
+background-image:url(../gfx/ui/painel_gerenciamento_cv/candidato_item.png);
+background-repeat:no-repeat;
+background-position: 10px 5px;
+margin-left:20px;
+
+
+ font-family: 'lucida_grandebold';
+	font-size:11px;
+	
+	display:inline-block;
+	float:left;
+}
+
+.box_candidato:hover
+{
+background-color:#f8f8f8;	
+}
+
+.box_candidato_feedback
+{
+	background-image:url(../gfx/ui/painel_gerenciamento_cv/feedback.jpg);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+
+width:62px;
+height:19px;
+
+display:inline-block;
+float:left;
+
+margin-top:3px;
+margin-left:15px;
+
+}
+
+.box_candidato_contato
+{
+	background-image:url(../gfx/ui/painel_gerenciamento_cv/contato.png);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+
+width:62px;
+height:19px;
+
+display:inline-block;
+float:left;
+
+margin-top:3px;
+margin-left:15px;
+
+}
+
+.box_candidato_favoritar
+{
+	background-image:url(../gfx/ui/painel_gerenciamento_cv/favoritar.jpg);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+
+width:132px;
+height:19px;
+
+display:inline-block;
+float:left;
+
+margin-top:3px;
+margin-left:7px;	
+}
+
+.box_candidato_ver_cv
+{
+	background-image:url(../gfx/ui/painel_gerenciamento_cv/ver_curriculo.png);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+
+width:162px;
+height:19px;
+
+display:inline-block;
+float:left;
+
+margin-top:3px;
+margin-left:8px;	
+}
+
+
+.box_candidato_txt
+{
+	 font-family: 'lucida_granderegular';
+	font-size:10px;
+	color:#bcbcbc;
+	
+}
+.box_candidato_nome
+{
+display:inline-block;
+float:left;
+margin-left:25px;
+margin-top:2px;
+}

@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+.sucesso_feedback
+{
+margin:5px 5px 5px 5px;
+color:#093;
+
+font-family: 'lucida_grandebold';
+	font-size:11px;	
+	
+}
+
+
+
+
+#feedback_txt
+{
+width:350px;
+height:70px;	
+resize:none;
+}
+
+#feedback
+{
+z-index:10000;
+position:fixed;
+bottom:10px;
+right:-26.8em;
+}
+
+.feedback_tag
+{
+position:absolute;
+left:-25px;
+top:30px;	
+}
+
+.feedback_box
+{
+
+width:400px;
+height:157px;
+
+background-color:#ffffff;
+border-style:solid;
+border-width:1px;
+border-color:#c7c7c7;
+
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+position:relative;
+
+padding-left:25px;
+padding-top:30px;
+padding-bottom:35px;
+
+font-family: 'lucida_granderegular';
+	font-size:11px;	
+}

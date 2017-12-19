@@ -1,0 +1,278 @@
+#selos_garantia
+{
+	position:absolute;
+	top:-5%;;
+	right:5%;
+}
+.selo_seguranca
+{
+display:inline-block;
+float:left;	
+margin-left:20px;
+}
+
+.texto_contrato
+{
+		color:#666;
+	font-family:'lucida_granderegular';	
+	font-size:12px;
+}
+
+.valor_promo
+{
+	position:absolute;
+	top:32px;
+	right:160px;
+	color:#999;
+	font-family:'lucida_granderegular';	
+	font-size:11px;
+}
+
+
+
+.valor
+{
+	position:absolute;
+	top:10px;
+	right:30px;
+	
+width:125px;
+height:61px;	
+
+}
+
+.plano_rs
+{
+	margin-top:18px;
+	margin-right:3px;
+	font-size:16px;
+	
+font-family:'lucida_grandebold';	
+font-weight:bold;
+color:#333;
+display:inline-block;
+float:left;
+}
+
+.plano_valor_maior
+{
+	font-size:35px;
+font-family:'lucida_grandebold';	
+font-weight:bold;
+color:#333;
+
+display:inline-block;
+float:left;
+}
+
+
+.plano_valor_menor
+{
+	font-size:18px;
+font-family:'lucida_grandebold';	
+font-weight:bold;
+color:#333;
+
+display:inline-block;
+float:left;
+}
+
+
+
+
+.planos
+{
+	position:relative;
+width:600px;
+height:44px;
+
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;	
+border-color:#e3e3e3;
+border-style:solid;
+border-width:1px;
+padding-top:10px;
+padding-left:20px;
+
+
+}
+.planos_txt
+{
+font-size:25px;
+font-family:'lucida_grandebold';	
+font-weight:bold;
+color:#333;
+}
+
+
+
+
+#categorias
+{
+width:inherit;
+height:117px;
+overflow-y:scroll;	
+overflow-x:hidden;
+}
+.btm_checkout{
+	
+	-moz-box-shadow:inset 0px 1px 0px 0px #615861;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #615861;
+	box-shadow:inset 0px 1px 0px 0px #615861;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cf1919), color-stop(1, #781a1a) );
+	background:-moz-linear-gradient( center top, #cf1919 5%, #781a1a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf1919', endColorstr='#781a1a');
+	background-color:#cf1919;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #ffffff;
+	display:inline-block;
+	color:white;
+	font-family: 'lucida_granderegular';
+	font-size:12px;
+	font-weight:bold;
+	font-style:normal;
+	height:28px;
+	line-height:20px;
+	width:111px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #292529;
+}
+.btm_checkout
+{
+		outline:none;
+}
+.btm_checkout:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #781a1a), color-stop(1, #cf1919) );
+	background:-moz-linear-gradient( center top, #781a1a 5%, #cf1919 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#781a1a', endColorstr='#cf1919');
+	background-color:#781a1a;
+}
+
+.tab
+{
+float:left;
+display:inline-block;	
+
+	width:167px;
+	height:39px;
+opacity:0.3;
+
+padding:5px 10px 5px 5px;
+
+
+}
+
+.content
+{
+width:623px;
+height:493px;
+	
+}
+
+.tab_active
+{
+opacity:1;
+}
+
+li
+{
+list-style-type:none;	
+margin-bottom:5px;
+}
+.form_txt_big
+{
+	z-index:10000;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+
+padding-left:5px;
+border-width:1px;
+width:204px;
+height:19px;	
+}
+.form_txt_small
+{
+		z-index:10000;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+padding-left:5px;
+border-width:1px;
+width:65px;
+height:19px;	
+}
+
+
+.form_txt_medio
+{
+		z-index:10000;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+padding-left:5px;
+border-width:1px;
+width:110px;
+height:19px;	
+}
+
+
+#checkout
+{
+position:relative;	
+
+}
+
+/*BOX AJUDA CARTAO DE CREDOT*/
+.cartao_container
+{
+position:relative;	
+}
+.box_cartao
+{
+		z-index:1000000;
+	display:none;/*inicialmente nao é visível*/
+width:162px;
+height:112px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+background-color:white;
+border-style:solid;
+border-width:1px;
+border-color:#CCC;
+
+}
+.seta_box_cartao
+{
+			z-index:1000000;
+position:absolute;
+top:40%;
+left:-8px;
+}
+
+.checa_valido
+{
+font-family:'lucida_granderegular';
+font-size:10px;
+color:#F00;
+display:none;	
+}

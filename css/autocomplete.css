@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#mytags
+{
+position:relative;
+	
+}
+
+.results_box
+{
+	position:absolute;
+	top:25px;
+	left:0px;
+	z-index:11000;
+	background-color:white;
+	overflow-x:hidden;
+	overflow-y:auto;
+	
+	width:140px;
+	max-height:200px;
+	padding:2px 2px 2px 2px;
+border-style:solid;
+border-color:#CCC;
+border-width:1px;
+
+/*radius*/
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;	
+
+/*shadow*/
+-webkit-box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    5px 5px 7px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         5px 5px 7px 0px rgba(50, 50, 50, 0.75);
+
+}
+.not_selected
+{
+		z-index:15000;
+display:inline-block;
+float:left;
+width:140px;
+}
+
+.not_selected:hover
+{
+	background-color:#6CF;
+}
+
+a
+{
+text-decoration:none;
+color:inherit;	
+}
+

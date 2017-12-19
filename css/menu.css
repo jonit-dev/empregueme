@@ -1,0 +1,238 @@
+
+.top_header {
+
+
+background-image:url(../gfx/ui/barra_topo.jpg);
+background-repeat:repeat-x;
+
+-webkit-transform: translateZ(0); /*Esse código ao lado é para concertar o bug do scrolling em elementos com position fixed no chrome(sem esse código o elemento mexe para cima e para baixo quando vc dá scroll!!*/
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 38px;
+
+background-color:#242424;
+-webkit-box-shadow: 3px 3px 7px 0px rgba(50, 50, 50, 0.65);
+-moz-box-shadow:    3px 3px 7px 0px rgba(50, 50, 50, 0.65);
+box-shadow:         3px 3px 7px 0px rgba(50, 50, 50, 0.65);
+
+  z-index: 50;
+}
+
+
+
+.logo {
+
+	position: absolute;
+	left: 0px;
+	top: -2px;
+	
+
+	z-index: 51;
+}
+
+
+
+
+
+
+
+
+
+/* MENU SETTINGS */
+.settings {
+	position: relative;
+	left:83%;
+	top: 6px;
+	background-image: url(../gfx/ui/settings.png);
+	background-repeat: no-repeat;
+	background-origin: 0px 0px;
+	width: 3.069cm;
+	height: 0.882cm;
+	z-index: 61;
+}
+.settings_txt
+{
+	position: absolute;
+	text-shadow: 1px 1px 0px black;
+	font-size: 13px;
+	font-family: "lucida_granderegular";
+	color: white;
+	font-weight:bold;
+	width: 223px;
+	left: 2.2em;
+	top: 3px;
+	height: auto;
+	width: 223px;
+	float: left;
+	display: inline-block;
+
+}
+#menu_settings
+{
+	display:none;
+	width: 140px;
+	height: 172px;
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	background-color: #0d0e0f;
+	position: relative;
+	top: 10px;
+	left: 78%;
+	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+.menu_detail
+{
+	background-image: url(../gfx/ui/menu_detail.png);
+	background-repeat: no-repeat;
+	background-origin: 0px 0px;
+	position: absolute;
+	top: -8px;
+	left: 117px;
+	z-index: 100;
+	width: 39px;
+	height: 16px;
+}
+.menu_option
+{
+	margin-top:18px;
+	margin-bottom:-10px;
+	margin-left:10px;
+	float: left;
+	display:inline-block;
+	width:100px;
+	height:auto;
+	text-shadow: 1px 1px 0px black;
+	font-size: 12px;
+	font-family: "lucida_granderegular";
+	color: silver;
+	opacity:.9
+}
+.menu_option:hover
+{
+	opacity:1;
+}
+.menu_img
+{
+	float:left;
+	display:inline-block;
+	width:18px;
+	height:20px;	
+	margin-top:-4px;
+}
+
+/*PAINEL ESQUERDA*/
+
+
+#box_wrapper
+{
+	-webkit-transform: translateZ(0);
+position:fixed;
+top:32px;
+left:0px;
+width:180px;	
+z-index:3;
+}
+#box_meio
+{
+	
+	background-color:#ededed;
+width:180px;
+height:548px;	
+
+}
+
+
+#box_top
+{
+background-color:#0d0e0f;
+width:180px;
+height:140px;	
+
+}
+#foto_perfil
+{
+	position:absolute;
+	top:14px;
+	left:9px;
+	
+}
+#foto_mask
+{
+	background-image:url(../gfx/ui/picture_mask.png);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	width:100px;
+	height:100px;
+	position:absolute;
+	top:-10px;
+	left:-8px;
+}
+#nome_usuario
+{
+	position:absolute;
+	top:18px;
+	left:93px;
+	color:white;
+	    font-family: 'lucida_grandebold';
+		font-size:13px;
+		font-weight:bold;
+}
+
+#editar_perfil
+{
+	position:absolute;
+	top:38px;
+	left:110px;
+	color:#666666;
+	    font-family: 'lucida_granderegular';
+		font-size:11px;
+}
+#btm_anunciar
+{
+	position:absolute;
+	top:95px;
+	left:24px;
+	
+}
+.painel_titulo
+{
+	 font-family: 'lucida_granderegular';
+	 color:#999;
+	 font-size:12px;
+	 padding-left:10px;
+	 padding-top:10px;
+	 
+	 }
+.painel_opcao
+{
+	 font-family: 'lucida_granderegular';
+	 color:#494949;
+	 font-size:11px;
+	 padding-left:15px;
+	 padding-top:3px;
+	  padding-bottom:3px;
+}
+.painel_opcao_selecionada
+{
+	 font-family: 'lucida_granderegular';
+	 color:#494949;
+	 font-size:12px;
+	 padding-left:15px;
+	 padding-top:5px;
+	  padding-bottom:5px;
+	  background-color:white;
+}
+
+.painel_opcao:hover
+{
+	background-color:#333;
+	color:white;
+}
+
+
+/*END PAINEL ESQUERDA*/

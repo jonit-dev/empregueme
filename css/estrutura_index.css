@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*DEFAULT*/
+h1,h2,h3,h4,p,body,ul,li,form
+{
+	font-family:'lucida_granderegular';	
+}
+textarea
+{
+resize:none;	
+	font-family:'lucida_granderegular';	
+	font-size:12px;
+}
+p{
+font-size:14px;	
+}
+
+ul
+{
+list-style:none;	
+margin-left:-30px;
+}
+li
+{
+font-size:13px;	
+}
+a
+{
+text-decoration:none;	
+}
+
+/*end default*/ 
+#area_busca
+{
+width:900px;
+height:44px;
+z-index:100000;
+
+margin-bottom:15px;
+
+
+
+padding-top:15px;
+padding-left:40px;
+
+background-color:#efefef;
+	border-style:solid;
+	border-width:1px;
+	border-color:#e4e4e4;
+	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+
+-webkit-box-shadow: inset 4px 1px 7px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: inset 4px 1px 7px 0px rgba(0,0,0,0.25);
+box-shadow: inset 4px 1px 7px 0px rgba(0,0,0,0.25);
+
+
+background-image:url(../gfx/ui/Search.png);
+background-repeat:no-repeat;
+background-position:15px 20px;
+}
+
+#estado2
+{
+width:140px;	
+}
+#categoria2
+{
+width:150px;	
+}
+
+
+#busca_rapida
+{
+	background-image:url(../gfx/ui/Search.png);
+background-repeat:no-repeat;
+background-position:2px 3px;
+
+
+
+	z-index:10000;
+position:fixed;
+top:1%;
+left:14%;	
+
+width:228px;
+height:24px;
+
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+
+background-color:#2b2b2b;
+
+border-style:solid;
+border-width:1px;
+border-color:#333;
+
+outline:none;
+
+color:#CCC;
+
+padding-left:25px;
+}
+
+::-webkit-input-placeholder {
+   color:#666;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color:#666; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color:#666;  
+}
+
+:-ms-input-placeholder {  
+ color:#666;  
+}
+
+
+
+
+
+#area_busca_empresa
+{
+width:auto;
+height:auto;
+padding-bottom:15px;
+z-index:100000;
+
+margin-bottom:15px;
+
+
+
+padding-top:15px;
+padding-left:40px;
+
+background-color:#efefef;
+	border-style:solid;
+	border-width:1px;
+	border-color:#e4e4e4;
+	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+
+-webkit-box-shadow: inset 4px 1px 7px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: inset 4px 1px 7px 0px rgba(0,0,0,0.25);
+box-shadow: inset 4px 1px 7px 0px rgba(0,0,0,0.25);
+
+
+background-image:url(../gfx/ui/Search.png);
+background-repeat:no-repeat;
+background-position:15px 20px;
+}
+
+
+
+
+
+
+#conteudo
+{
+	position:absolute;
+	top:50px;
+	left:200px;
+	width: 60%;
+	height: auto;
+}
+
+
+
+/*FORMULÁRIO*/
+select
+{
+	font-family:'lucida_granderegular';
+	border-style:solid;
+	border-color:#cccccc;	
+	border-width:1px;
+}
+input
+{
+
+	border-style:solid;
+	border-color:#cccccc;	
+	border-width:1px;
+		font-family:'lucida_granderegular';
+}
+
+
+
+/*TEXTOS*/
+.texto_verde
+{
+color:#060;
+font-size:13px;	
+}
+.texto_vermelho
+{
+color:#900;
+font-size:13px;	
+}
+.small_txt
+{
+font-size:13px;	
+}
+.sucesso_txt
+{
+color:#009900;	
+}
+
+.error_txt
+{
+color:#900;	
+}
+
+.campo_obrigatorio
+{
+font-size:9px;
+color:#F00;
+}
+
+.campo_opcional
+{
+font-size:9px;
+color:red;
+}
+
+.ddd
+{
+width:30px;	
+}
+.long_text
+{
+width:270px;	
+}
+.prazo
+{
+width:50px;	
+}
+.italico
+{
+font-style:italic;	
+}

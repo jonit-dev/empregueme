@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style type="text/css">
+@import url('system_message.css');
+</style>
+
+<script type='text/javascript' src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    
+	
+	function mostra_mensagem(mensagem,tipo)
+	{
+		switch(tipo)
+			{
+		case 'sucesso':
+			$("#results").hide().html("").append('<div class="sucesso"><div class="msg_text_sucess">'+mensagem+'</div></div>').fadeIn(500);
+		setTimeout('$("#results").fadeOut(500,0,function(){$("#results").html("");});',5000);//limpa os resultados em 5 segundos
+		
+		break;	
+		case 'error':
+			$("#results").hide().html("").append('<div class="system_error"><div class="msg_text_error">'+mensagem+'</div></div>').		fadeIn(500);	
+		setTimeout('$("#results").fadeOut(500,0,function(){$("#results").html("");});',5000);//limpa os resultados em 5 segundos
+				
+			
+		break;
+		
+		
+			}//end switch
+	}//end function mostra message
+	
+	
+	
+	//funcções para ativar
+	$("#mostra_sucesso").click(function(){
+	
+		mostra_mensagem('Essa é uma mensagem de sucesso!','sucesso');
+
+	});//end click
+
+	$("#mostra_error").click(function(){
+		
+		mostra_mensagem('Essa é uma mensagem de erro!','error');
+	
+	});//end click
+
+
+	
+});//end ready
+</script>
+</head>
+
+<body>
+
+
+<div id="results">
+
+    <!--
+    
+    <div class="system_error">
+    <div class="msg_text_error">Alterações não foram realizadas!</div>
+    </div>
+-->
+
+
+</div>
+
+<input type="button" id="mostra_sucesso" value="Mostra sucesso"/>
+<input type="button" id="mostra_error" value="Mostra error"/>
+
+
+</body>
+</html>
